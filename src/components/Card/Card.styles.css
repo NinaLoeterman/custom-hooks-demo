@@ -1,0 +1,55 @@
+.Card {
+    height: 200px;
+    width: 30%;
+    min-width: 300px;
+    background-color: var(--secondary-bg-color);
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--secondary-bg-color);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 1025px) {
+      .Card {
+          width: 45%;
+      }
+  }
+  
+  .Card_favorite {
+    border: 2px solid var(--main-accent-color);
+  }
+  
+  .Card_title {
+    color: var(--main-light-color);
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+    margin-bottom: 10px;
+  }
+  
+  .Card_icon_wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .Card_opening_crawl {
+    color: var(--main-light-color);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+  }
+  
+  .Card_content {
+    margin: 10px;
+  }
+  
+  .Card_text_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 10px;
+  }
+  
