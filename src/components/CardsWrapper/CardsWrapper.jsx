@@ -9,9 +9,13 @@ const CardsWrapper = () => {
   return (
     <div className="CardsWrapper">
       <div className="CardsWrapper_content">
-        {films.map((film) => {
-          return <Card key={film.episode_id} film={film} />;
-        })}
+        {films?.length > 0 ? (
+          films.map((film) => {
+            return <Card key={film.episode_id} film={film} />;
+          })
+        ) : (
+          <div className="CardsWrapper_loading">Loading...</div>
+        )}
       </div>
     </div>
   );
